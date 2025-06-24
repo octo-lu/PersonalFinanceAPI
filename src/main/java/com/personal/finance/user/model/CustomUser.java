@@ -11,7 +11,6 @@ import java.util.List;
 @Table(name = "user")
 public class CustomUser {
 
-
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,6 +24,9 @@ public class CustomUser {
 
     @Column(name = "password")
     private String password;
+
+    @Column(name = "balance")
+    private Double balance;
 
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")

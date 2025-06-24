@@ -22,6 +22,7 @@ public class Transaction {
     @Column(name = "date")
     private LocalDateTime date;
 
+    //Turn this into an enum later
     @Column(name = "type")
     private String type;
 
@@ -30,6 +31,10 @@ public class Transaction {
 
     @Column(name = "instalments")
     private Integer instalments;
+
+    //Turn this into an enum later
+    @Column(name = "action")
+    private String action;
 
     @Column(name = "user_id")
     private Integer userId;

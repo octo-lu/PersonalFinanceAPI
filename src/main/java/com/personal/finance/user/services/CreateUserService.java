@@ -17,7 +17,6 @@ public class CreateUserService implements Command<CustomUser, UserDTO> {
         this.userRepository = userRepository;
     }
 
-
     @Override
     public ResponseEntity<UserDTO> execute(CustomUser customUser) {
         CustomUser savedCustomUser = userRepository.save(customUser);

@@ -18,6 +18,7 @@ public class UserDTO {
         this.id = customUser.getId();
         this.name = customUser.getName();
         this.email = customUser.getEmail();
+
         if(customUser.getTransactionList() != null){
             this.transactionDTOList = customUser.getTransactionList().stream().map(TransactionDTO::new).toList();
         }

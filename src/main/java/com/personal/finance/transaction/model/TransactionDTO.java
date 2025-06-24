@@ -13,6 +13,7 @@ public class TransactionDTO {
     private Double amount;
     private Integer instalments;
     private LocalDateTime date;
+    private String action;
 
 
     public TransactionDTO(Transaction transaction) {
@@ -22,5 +23,6 @@ public class TransactionDTO {
         this.amount = transaction.getAmount();
         this.instalments = transaction.getInstalments();
         this.date = transaction.getDate();
+        this.action = transaction.getAction();
     }
 }
